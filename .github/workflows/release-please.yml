@@ -17,4 +17,3 @@ jobs:
         with:
           release-type: node
           package-name: release-please-action
-          release-as: v0.1.0
