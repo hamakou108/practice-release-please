@@ -3,7 +3,12 @@ on:
     branches:
       - main
 
-permissions: write-all
+# permissions: write-all
+# TODO: 必要な権限を特定する
+permissions:
+  contents: write
+  pull-requests: write
+
 
 name: release-please
 jobs:
