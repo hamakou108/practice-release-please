@@ -1,0 +1,19 @@
+{
+  "name": "practice-release-please",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamakou108/practice-release-please.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamakou108/practice-release-please/issues"
+  },
+  "homepage": "https://github.com/hamakou108/practice-release-please#readme"
+}
