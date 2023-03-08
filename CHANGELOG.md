@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.3.0](https://github.com/hamakou108/practice-release-please/compare/v0.2.0...v0.3.0) (2023-03-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* switch from node to python ([#36](https://github.com/hamakou108/practice-release-please/issues/36))
+
+### Build System
+
+* switch from node to python ([#36](https://github.com/hamakou108/practice-release-please/issues/36)) ([0271228](https://github.com/hamakou108/practice-release-please/commit/02712281f6b88971de127adb06342313c100a8b9))
+
 ## [0.2.0](https://github.com/hamakou108/practice-release-please/compare/v0.1.1...v0.2.0) (2023-03-08)
 
 
