@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.1](https://github.com/hamakou108/practice-release-please/compare/v0.1.0...v0.1.1) (2023-03-08)
+
+
+### Features
+
+* baz ([#30](https://github.com/hamakou108/practice-release-please/issues/30)) ([dfdf7c5](https://github.com/hamakou108/practice-release-please/commit/dfdf7c59dfd5aeb31841cce85bf1d6fecba9222d))
+
+
+### Bug Fixes
+
+* fix release please config ([#32](https://github.com/hamakou108/practice-release-please/issues/32)) ([8063bac](https://github.com/hamakou108/practice-release-please/commit/8063bac83d48bf57683d1450beda2bbb17d92074))
+
 ## 0.1.0 (2023-03-08)
 
 
