@@ -34,13 +34,5 @@ jobs:
         run: |
           pdm config repository.pypi.username "__token__"
           pdm config repository.pypi.password ${{secrets.PYPI_TOKEN}}
-        # run: |
-        #   pdm config repository.pypi.username "__token__"
-        #   pdm config repository.pypi.password ${PYPI_TOKEN}
-        # run: |
-        #   pdm config repository.pypi.username "__token__"
-        #   pdm config repository.pypi.password ${{secrets.PYPI_TOKEN}}
-        #   pdm publish
-        # env:
-        #   PYPI_TOKEN: ${{secrets.PYPI_TOKEN}}
+          pdm publish
         if: ${{ steps.release.outputs.release_created }}
