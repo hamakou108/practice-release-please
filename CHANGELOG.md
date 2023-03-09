@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/hamakou108/practice-release-please/compare/v0.3.1...v0.3.2) (2023-03-09)
+
+
+### Bug Fixes
+
+* fix ci ([#43](https://github.com/hamakou108/practice-release-please/issues/43)) ([94039cb](https://github.com/hamakou108/practice-release-please/commit/94039cb148de84d90dda507b1d0d1d908a421e45))
+
 ## [0.3.1](https://github.com/hamakou108/practice-release-please/compare/v0.3.0...v0.3.1) (2023-03-09)
 
 
