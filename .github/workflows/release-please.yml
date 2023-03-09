@@ -16,6 +16,23 @@ jobs:
       - uses: google-github-actions/release-please-action@v3
         with:
           release-type: python
-          package-name: practice-release-please
+          package-name: practice_release_please_hamakou108
           bump-minor-pre-major: true
           bump-patch-for-minor-pre-major: true
+      - uses: actions/checkout@v2
+        # these if statements ensure that a publication only occurs when
+        # a new release is created:
+        if: ${{ steps.release.outputs.release_created }}
+      - name: Setup PDM
+        uses: pdm-project/setup-pdm@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+          enable-pep582: true
+        if: ${{ steps.release.outputs.release_created }}
+      - name: Publish package
+        run: pdm config repository.pypi.username "__token__"
+        run: pdm config repository.pypi.password ${PYPI_TOKEN}
+#        run: pdm publish
+        env:
+          PYPI_TOKEN: ${{secrets.PYPI_TOKEN}}
+        if: ${{ steps.release.outputs.release_created }}
