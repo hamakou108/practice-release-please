@@ -2,7 +2,7 @@
 
 [project]
 name = "practice_release_please_hamakou108"
-version = "0.2.0"
+version = "0.3.0"
 description = "practice release please"
 authors = [
     {name = "hamakou108", email = "hamakou108@gmail.com"},
