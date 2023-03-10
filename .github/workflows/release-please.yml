@@ -17,7 +17,7 @@ jobs:
         id: release
         with:
           release-type: python
-          package-name: practice_release_please_hamakou108
+          package-name: practice-release-please-hamakou108
           bump-minor-pre-major: true
           bump-patch-for-minor-pre-major: true
       - uses: actions/checkout@v2
