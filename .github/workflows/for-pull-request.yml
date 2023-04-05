@@ -1,0 +1,16 @@
+name: Actions for Pull Request
+
+on:
+  pull_request:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: echo
+        run: echo "Actions running!"

@@ -7,15 +7,21 @@ permissions:
   contents: write
   pull-requests: write
 
-
 name: release-please
 jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
+      - name: Generate GitHub Apps token
+        id: generate_token
+        uses: tibdex/github-app-token@v1
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.PRIVATE_KEY }}
       - uses: google-github-actions/release-please-action@v3
         id: release
         with:
+          token: ${{ steps.generate_token.outputs.token }}
           release-type: python
           package-name: practice-release-please-hamakou108
           bump-minor-pre-major: true
@@ -28,7 +34,6 @@ jobs:
         uses: pdm-project/setup-pdm@v3
         with:
           python-version: "3.11"
-          enable-pep582: true
         if: ${{ steps.release.outputs.release_created }}
       - name: Publish package
         run: |
