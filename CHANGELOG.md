@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.6](https://github.com/hamakou108/practice-release-please/compare/v0.3.5...v0.3.6) (2023-04-08)
+
+
+### Bug Fixes
+
+* bar ([#53](https://github.com/hamakou108/practice-release-please/issues/53)) ([43fa1a1](https://github.com/hamakou108/practice-release-please/commit/43fa1a11bb542b94cbf1ab79780092c6aa77ad54))
+
 ## [0.3.5](https://github.com/hamakou108/practice-release-please/compare/v0.3.4...v0.3.5) (2023-04-05)
 
 
