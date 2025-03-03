@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.4.0](https://github.com/hamakou108/practice-release-please/compare/v0.3.6...v0.4.0) (2025-03-03)
+
+
+### Features
+
+* baz ([#60](https://github.com/hamakou108/practice-release-please/issues/60)) ([696eeed](https://github.com/hamakou108/practice-release-please/commit/696eeed6c1d1b0c523dfd44ad76300942e61ca99))
+* foo ([#58](https://github.com/hamakou108/practice-release-please/issues/58)) ([d0cbec2](https://github.com/hamakou108/practice-release-please/commit/d0cbec27c9b1170de98605f5c90f6d75cd650eb6))
+
+
+### Bug Fixes
+
+* bar ([#56](https://github.com/hamakou108/practice-release-please/issues/56)) ([eab1aae](https://github.com/hamakou108/practice-release-please/commit/eab1aaeeade667407620017fd3a8e755a5b93b64))
+
 ## [0.3.6](https://github.com/hamakou108/practice-release-please/compare/v0.3.5...v0.3.6) (2023-04-08)
 
 
