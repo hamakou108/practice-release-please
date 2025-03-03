@@ -19,6 +19,7 @@ jobs:
         with:
           token: ${{ steps.generate_token.outputs.token }}
           config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
       - uses: actions/checkout@v2
         # these if statements ensure that a publication only occurs when
         # a new release is created:
