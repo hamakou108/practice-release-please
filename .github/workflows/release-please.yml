@@ -8,16 +8,15 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate GitHub Apps token
-        id: generate_token
-        uses: tibdex/github-app-token@v1
+      - uses: actions/create-github-app-token@v1
+        id: app-token
         with:
-          app_id: ${{ secrets.APP_ID }}
+          app_id: ${{ vars.APP_ID }}
           private_key: ${{ secrets.PRIVATE_KEY }}
       - uses: googleapis/release-please-action@v4
         id: release
         with:
-          token: ${{ steps.generate_token.outputs.token }}
+          token: ${{ steps.app-token.outputs.token }}
       - uses: actions/checkout@v2
         # these if statements ensure that a publication only occurs when
         # a new release is created:
